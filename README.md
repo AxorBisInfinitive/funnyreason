@@ -1,77 +1,57 @@
 # **funnyreason**
 
-A delightfully pointless Python package that spits out a random, ridiculous reason
-for anything in life, coding, debugging, or your next existential spiral.
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Because sometimes you don’t need logic — you just need an excuse.
+一个毫无实际意义却令人愉快的 Python 包，能够随机吐出各种荒诞不经的理由，用来解释生活中的任何事情、编程问题、调试故障，甚至是你下一场存在主义危机。
+
+因为有时候，你不需要逻辑——你只需要一个借口。
 
 ---
 
-## **📦 Install**
+## 这是什么？
+
+一个完全没有实际用途的微型 Python 库。
+
+它不能解决问题，也不能优化代码。
+
+它只是给你一个有趣的理由，让你可以把责任推给别的东西。
+
+适用场景：
+
+- Git 提交信息
+- Slack 聊天
+- 错误日志
+- 调节心情的无厘头内容
+- 让邻居家的猫刮目相看
+
+---
+
+## 快速开始
+
+### 安装
 
 ```bash
 pip install funnyreason
 ```
 
----
-
-## **🔥 Usage**
+### 使用
 
 ```python
-from funnyreason import random_reason
-
-print(random_reason())
+import funnyreason as fr
+print(fr.random_reason())
 ```
 
-Example output:
+示例输出：
 
-```
-Because the universe was bored.
-```
-
-Or maybe:
-
-```
-A squirrel told me to.
-```
-
-Life is unpredictable. This package leans into that.
+> Because the universe was bored.
 
 ---
 
-## **✨ What Is This?**
+## 开发与调试
 
-A micro-library with absolutely no practical purpose.
-It doesn’t solve problems. It doesn’t optimize code.
-It just gives you a funny reason, so you can blame something else.
+本地安装：
 
-Perfect for:
-
-* Commit messages
-* Slack chats
-* Error logs
-* Mood-boosting nonsense
-* Impressing the neighbor’s cat
-
----
-
-## **🛠️ Features**
-
-* Zero configuration
-* Zero philosophy
-* Zero productivity boost
-* 100% chaos-inspired reasons
-
----
-
-## **📄 License (MIT)**
-
-```
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the “Software”), to deal
-in the Software without restriction, including without limitation the rights  
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
-copies of the Software…
+```bash
+pip install -e .
 ```
