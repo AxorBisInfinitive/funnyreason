@@ -32,7 +32,7 @@
 ### 安装
 
 ```bash
-pip install funnyreason
+pip install git+https://github.com/AxorBisInfinitive/funnyreason.git
 ```
 
 ### 使用
