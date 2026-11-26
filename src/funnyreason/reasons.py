@@ -1,14 +1,13 @@
 import random
+from pathlib import Path
 
-REASONS = [
-    "Because the universe was bored.",
-    "A squirrel told me to.",
-    "To impress the neighbor's cat.",
-    "Because destiny double-booked its schedule.",
-    "My WiFi made me do it.",
-    "That’s just how the cookie crumbled today.",
-    "Gravity was feeling extra emotional."
-]
+REASONS = (
+    Path(__file__)
+    .with_name("reasons.txt")
+    .read_text(encoding="utf-8")
+    .splitlines()
+)
+
 
 def random_reason():
     return random.choice(REASONS)
